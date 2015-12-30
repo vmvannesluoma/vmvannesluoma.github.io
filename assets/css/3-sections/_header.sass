@@ -1,0 +1,72 @@
+header
+	max-height: 100%
+	//background: url(../img/etusivu.jpg) top center
+	//background-size: cover
+	//position: relative
+	//z-index: -1
+
+.outer
+	position: relative
+	width: 100%
+	padding-top: 56.5%
+
+.outer .inner
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	outline: 1px grey
+
+
+	video
+		//height: 100vh
+		max-width: 100%
+		position: absolute
+		top: 0
+		left: 0
+		width: auto
+		height: auto
+		//transform: translate(-50%, -50%)
+
+
+		width: auto
+		height: auto
+		z-index: -1
+		//padding-bottom: 50px
+
+	nav
+		float: none
+		text-align: center
+		padding: 44% 30px 0 0
+
+		a
+			display: inline-block
+			margin-left: 20px
+			font:
+				size: 18px
+
+
+			color: rgba(0,0,0,0.7)
+			@extend %small-bold
+
+			&:hover
+				color: rgba(0,0,0,1)
+
+.kicker
+	@extend %small-bold
+	text-align: center
+	letter-spacing: 0.05em
+	color: white
+	line-height: 1
+
+@media (max-width: 640px)
+	header
+
+		nav
+			float: none
+			text-align: center
+			padding-top: 90px
+
+		h1
+			padding-top: 0px

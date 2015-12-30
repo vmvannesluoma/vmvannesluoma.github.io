@@ -1,0 +1,14 @@
+# Site settings
+title: Valentina Vannesluoma
+description: Freelance copywriter
+email: valentina@gmail.fi
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+port: 3000
+
+sass:
+  sass_dir: assets/css
+  style: :nested
