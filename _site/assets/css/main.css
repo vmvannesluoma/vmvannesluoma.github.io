@@ -434,7 +434,8 @@ header {
 .outer {
   position: relative;
   width: 100%;
-  padding-top: 56.5%; }
+  padding-top: 56.5%;
+  min-height: 120px; }
 
 .outer .inner {
   position: absolute;
