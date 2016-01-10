@@ -54,6 +54,27 @@ header
 			&:hover
 				color: rgba(0,0,0,1)
 
+.back-to-top
+	+size(50px)
+	line-height: 46px
+	font-size: 24px
+	text-align: center
+	position: fixed
+	bottom: 0
+	right: 0
+	margin: 10px
+	display: block
+	border-radius: 50%
+	background: black
+	opacity: 0.2
+	transition-property: opacity
+	transition-duration: 500ms
+	color: white
+
+	&:hover
+		opacity: 0.5
+		cursor: pointer
+
 .kicker
 	@extend %small-bold
 	text-align: center
