@@ -52,49 +52,9 @@
       margin: 10px 9%
 
 .blurb
-  max-width: 620px
+  max-width: 720px
   padding: 0 15px
   margin: 50px auto
   font-size: 24px
   text-align: center
   font-weight: 300
-
-.skill-lockup
-  max-width: 540px
-  margin: 100px auto
-  color: #999
-  +clearfix
-
-  .skill-unit
-    width: 270px
-    float: left
-
-  .skill-icons
-    font-size: 0
-    margin: 0px 0 30px
-
-    span
-      display: inline-block
-      +size(14px)
-      background-color: $accent
-      margin-right: 8px
-      border-radius: 50%
-
-      &:after
-        content: ''
-        display: block
-        +size(10px)
-        background: #F6F6F8
-        border-radius: 50%
-        margin: 2px
-
-    @for $i from 1 through 10
-      &.skill-#{$i} span:nth-child(n+#{$i+1})
-        @extend %skill-color
-
-@media screen and (max-width: 541px)
-  .skill-lockup
-    width: 270px
-
-%skill-color
-  background: $bgcolor
