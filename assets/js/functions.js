@@ -1,7 +1,8 @@
 $(function() {
   smoothScroll(1000);
 
-  $("#header h1").fitText(1, { minFontSize: '10px', maxFontSize: '72px' });
+  $(".element").fitText(2, { minFontSize: '10px', maxFontSize: '100px' });
+  $(".element2").fitText(0.9, { minFontSize: '45px', maxFontSize: '70px' });
   $(".biglink").fitText(1.5);
   $(".biglink1").fitText(1.5);
 
@@ -347,3 +348,26 @@ $backToTop.on('click', function(e) {
 		});
 	};
 }(jQuery || $)); // jQuery or jQuery-like library, such as Zepto
+
+$(function(){
+    $(".element").typed({
+      strings: ["I Write.^1000<br>I Read.^1000<br>I Translate.^1000<br>I Teach."],
+      typeSpeed: 100,
+      showCursor: false,
+      cursorChar: "|"
+    });
+});
+
+$(function(){
+    $(".element2").typed({
+      strings: ["I Write.", "I Read.", "I Translate.", "I Teach."],
+      typeSpeed: 100,
+      backDelay: 1000,
+      backSpeed: 0,
+      loop: true,
+      loopCount: false,
+      showCursor: true,
+      cursorChar: "|"
+
+    });
+});
